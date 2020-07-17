@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "HelloWorld",
-    "slug": "myNewProject",
+    "name": "React Native Examples (expo)",
+    "slug": "reactNativeExamples",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
