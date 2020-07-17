@@ -1,0 +1,105 @@
+{
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "babelOptions": {
+      "configFile": "./babel.config.js"
+    }
+  },
+  "extends": [
+    "react-app",
+    "google",
+    "plugin:import/warnings",
+    "plugin:react/recommended"
+  ],
+  "globals": { "fetch": false, "waitFor": "readonly", "jasmine": "readonly" , "device": "readonly", "element": "readonly", "by": "readonly" },
+  "env": {
+    "jest": true
+  },
+  "plugins": ["react", "react-native","prettier", "babel"],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".android.js", ".ios.js"]
+      }
+    }
+  },
+  "rules": {
+    "semi": [
+        "error",
+        "never"
+    ],
+    "react/display-name": [0],
+    "comma-dangle": [
+        "error",
+        "always-multiline"
+    ],
+    "object-curly-spacing": [
+        "error",
+        "always"
+    ],
+    "indent": [
+        "error",
+        4
+    ],
+    "no-console": [
+        "warn",
+        {
+            "allow": [
+                "warn",
+                "error"
+            ]
+        }
+    ],
+    "no-unused-vars": 1,
+    "camelcase": 1,
+    "quotes": [
+        "error",
+        "single"
+    ],
+    "array-bracket-spacing": [
+        "error",
+        "always"
+    ],
+    "arrow-parens": [
+        2,
+        "as-needed",
+        {
+            "requireForBlockBody": false
+        }
+    ],
+    "strict": [
+        "error",
+        "never"
+    ],
+    "react/sort-comp": 2,
+    "react/jsx-uses-vars": 2,
+    "react/jsx-indent": 2,
+    "react/jsx-key": 2,
+    "react/self-closing-comp": [
+        "error",
+        {
+            "component": true,
+            "html": true
+        }
+    ],
+    "max-len": [
+        "warn",
+        {
+            "code": 130
+        }
+    ],
+    "react/jsx-no-target-blank": 1,
+    "require-jsdoc": 0,
+    "no-irregular-whitespace": 0,
+    "default-case": "off",
+    "radix": 0,
+    "spaced-comment": 0,
+    "linebreak-style": 0,
+    "no-invalid-this": 0,
+    "no-mixed-operators": 0,
+    "react/prop-types": 1,
+    "jsx-a11y/alt-text": 0,
+    "jsx-a11y/accessible-emoji": 0,
+    "jsx-a11y/label-has-for": 0
+  }
+}
